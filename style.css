@@ -21,11 +21,16 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
 }
+    
+
 .greet{
     text-align: center;
-    position: absolute;
     top: 39%;
     left: 8%;
     font-family: "Bodoni Moda", serif;
@@ -48,7 +53,6 @@ section{
 }
 .big-text::after{
     content: "PORTFOLIO";
-    position: absolute;
     inset: 0 0 0 0;
     -webkit-text-stroke-width: 2px;
     -webkit-text-fill-color: transparent;
@@ -58,7 +62,6 @@ section{
 .small-text{
     text-align: center;
     color: aliceblue;
-    position: absolute;
     top: 50%;
     left: 8%;
     font-size:  130px;
