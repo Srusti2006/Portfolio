@@ -63,12 +63,14 @@ section{
     left: 8%;
     font-size:  130px;
     font-family: "Bodoni Moda", serif;
+    z-index: 2;
     }
 .profile{
     top: 8%;
     right: 0%;
     position:absolute;
     height: 80vh;
+    z-index: 1;
     
 }
 .navbar{
