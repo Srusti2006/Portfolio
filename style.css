@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+section{
+    scroll-snap-align: start;
+}
+#port{
+    background-color: #1a1a1c;
+    left: 0%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+.greet{
+    text-align: center;
+    position: absolute;
+    top: 39%;
+    left: 8%;
+    font-family: "Bodoni Moda", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #F5F5F5;
+    letter-spacing: 1px;
+}
+.big-text{
+    
+    font-style: italic;
+    color:  #A53860;
+    position: absolute;
+    top: 62%;
+    left: 26%;
+    font-size:  198px;
+    
+      
+}
+.big-text::after{
+    content: "PORTFOLIO";
+    position: absolute;
+    inset: 0 0 0 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color:#A53860 ;
+    z-index: 2;
+}
+.small-text{
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    font-size:  130px;
+    font-family: "Bodoni Moda", serif;
+    }
+.profile{
+    top: 8%;
+    right: 0%;
+    position:absolute;
+    height: 80vh;
+    
+}
+.navbar{
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+
+    padding: 15px;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 79, 139, 0.3);
+    border-radius: 50px;
+
+    z-index: 1000;
+}
+
+.navbar a{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover{
+    background: #FF4F8B;
+    color: black;
+    transform: scale(1.15);
+}
+.navbar a.active{
+    background: #A53860;
+    color: white;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(165,56,96,.5);
+}
+
+
+.big-text{
+    transition: 0.4s ease;
+}
+
+.big-text:hover{
+    letter-spacing: 10px;
+    color: #ff4f8b;
+    text-shadow: 0 0 12px rgba(255,79,139,0.35);
+}
+.small-text{
+    display: inline-block;
+    color: #d9d9d9;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.small-text:hover{
+    transform: translateX(8px);
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+#home{
+    height: 100vh;
+    background: #1a1a1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.home-content{
+    width: 55%;
+}
+
+.intro{
+    color: #A53860;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-size: 5rem;
+    color: white;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.role{
+    color: #d9d9d9;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.bio{
+    color: #b5b5b5;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    padding: 15px 35px;
+    border: 2px solid #A53860;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .35s ease;
+}
+
+.btn:hover{
+    background: #A53860;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
